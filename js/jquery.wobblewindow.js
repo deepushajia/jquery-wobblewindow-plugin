@@ -130,7 +130,7 @@ THE SOFTWARE.
             //var radius = Math.ceil( Math.max( pointDistanceX, pointDistanceY ) ) * 2;
 
             canvas.width = windowObject.elementWidth + radius * 2;
-            canvas.height = windowObject.elementHeight + radius * 2;
+            canvas.height = windowObject.elementHeight + Math.ceil(pointDistanceX) * 2;
             canvas.style.left = ( ( windowObject.elementRect.left - windowObject.elementParentRect.left ) - radius ) + 'px';
             canvas.style.top = ( ( windowObject.elementRect.top - windowObject.elementParentRect.top ) - radius ) + 'px';
 
